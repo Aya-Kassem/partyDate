@@ -1,0 +1,157 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* MAIN SECTION START */
+#main{
+    background-image: url("../Images/events-heavenly-header.jpg");
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+}
+.bg{
+    background-color: rgba(214, 46, 51, 0.6);
+    width: 100%;
+    height: 100%;
+}
+
+.bg .main-content h1{
+    font-size: 60px;
+}
+#myNav{
+    position: fixed;
+    left: -250px;
+    top: 0;
+    height: 100%;
+    width: 250px;
+    background-color: rgb(65, 70, 88);
+}
+
+#closeIcon{
+    right: 30px;
+    font-size: 25px;
+}
+.navbar-nav li a{
+    font-size: 25px;
+    text-decoration: none;
+    color: #fff;
+    transition: color .2s ease-in-out;
+}
+.navbar-nav li a:hover{
+    color: rgba(214, 46, 51, 0.6);
+}
+.nav-icon {
+    display: inline-block;
+    width: 22px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px;
+}
+.open{
+    font-size: 25px;
+}
+.wrapper{
+    cursor: pointer;
+}
+/* MAIN SECTION END */
+
+/* SINGERS INFO SECTION START */
+.singers-info h3{
+    background-color: rgba(214, 46, 51 , 0.6);
+    color: #fff;
+    font-size: 24px;
+    margin: 0;
+    cursor: pointer;
+}
+.singers-info p {
+    background-color: #ccc;
+    font-size: 15px;
+    margin: 0;
+}
+.singers-info p:not(:first-of-type){
+    display: none;
+}
+/* SINGERS INFO SECTION END */
+
+/* COUNTDOWN SECTION START */
+.count-down{
+    background-image: url(../Images/invitation-2508607__340.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 45vh;
+}
+
+.dash{
+    display: inline-block;
+    width: 10px;
+    height: 2px;
+    background-color: #fff;
+}
+.timer{
+    font-size: 30px;
+}
+/* COUNTDOWN SECTION END */
+
+/* CONTACT SECTION START */
+.contact h2,
+.contact h4{
+    font-weight: 600;
+}
+.contact p,
+.contact i {
+    color: #777;
+}
+.social a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #777;
+}
+.social a i{
+    font-size: 18px;
+}
+.social a:hover{
+    background-color: rgb(214, 46, 51);
+    border: 1px solid rgb(214, 46, 51);
+}
+.social a:hover i {
+    color: #fff;
+}
+#counter{
+    font-size: 20px;
+}
+.form-control,
+.btn{
+    border-radius: 0;
+}
+.form-control:focus {
+    color: #555;
+    border-color: #86b7fe;
+    box-shadow: 0 0 5px 0.10rem rgb(13 110 253 / 25%);
+}
+/* CONTACT SECTION END */
+
+
+@media screen and (max-width: 992px){
+    ::-webkit-scrollbar{
+        width: 9px !important;
+        height: 9px !important;
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+    ::-webkit-scrollbar-thumb{
+        background-clip: content-box;
+        width: 5px !important;
+        background-color: rgba(0, 0, 0, 0.4) !important;
+        border-radius: 5px;
+    }
+    .count-down{
+        height: 100vh;
+        border: 1px solid black;
+    }
+}
