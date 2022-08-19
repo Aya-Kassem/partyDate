@@ -49,7 +49,7 @@ function countLetters(){
 
 
 // COUNT DOWN FUNCTION..........
-let partyDate = new Date("June 14, 2022 12:00:00").getTime();
+let partyDate = new Date("June 16, 2023 12:00:00").getTime();
 
 function partyTime(){
     let currentTime = new Date().getTime();
